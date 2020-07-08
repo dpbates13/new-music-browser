@@ -5,7 +5,7 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <BrowserRouter basename="/new-music-browser">
+  <BrowserRouter basename="dpbates13.github.io/new-music-browser">
     <App />
   </BrowserRouter>,
   document.getElementById("root")
