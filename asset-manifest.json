@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/new-music-browser/static/css/main.f7728e8a.chunk.css",
-    "main.js": "/new-music-browser/static/js/main.6e525c01.chunk.js",
-    "main.js.map": "/new-music-browser/static/js/main.6e525c01.chunk.js.map",
+    "main.js": "/new-music-browser/static/js/main.c85536c0.chunk.js",
+    "main.js.map": "/new-music-browser/static/js/main.c85536c0.chunk.js.map",
     "runtime-main.js": "/new-music-browser/static/js/runtime-main.b1f8da6e.js",
     "runtime-main.js.map": "/new-music-browser/static/js/runtime-main.b1f8da6e.js.map",
     "static/js/2.3e0b5fea.chunk.js": "/new-music-browser/static/js/2.3e0b5fea.chunk.js",
     "static/js/2.3e0b5fea.chunk.js.map": "/new-music-browser/static/js/2.3e0b5fea.chunk.js.map",
     "index.html": "/new-music-browser/index.html",
-    "precache-manifest.1ee46eed9957e607d8350e6e6f04b727.js": "/new-music-browser/precache-manifest.1ee46eed9957e607d8350e6e6f04b727.js",
+    "precache-manifest.c694fa8fb169758e34b21d651a575348.js": "/new-music-browser/precache-manifest.c694fa8fb169758e34b21d651a575348.js",
     "service-worker.js": "/new-music-browser/service-worker.js",
     "static/css/main.f7728e8a.chunk.css.map": "/new-music-browser/static/css/main.f7728e8a.chunk.css.map",
     "static/js/2.3e0b5fea.chunk.js.LICENSE.txt": "/new-music-browser/static/js/2.3e0b5fea.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b1f8da6e.js",
     "static/js/2.3e0b5fea.chunk.js",
     "static/css/main.f7728e8a.chunk.css",
-    "static/js/main.6e525c01.chunk.js"
+    "static/js/main.c85536c0.chunk.js"
   ]
 }
