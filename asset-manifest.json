@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/new-music-browser/static/css/main.f7728e8a.chunk.css",
-    "main.js": "/new-music-browser/static/js/main.c85536c0.chunk.js",
-    "main.js.map": "/new-music-browser/static/js/main.c85536c0.chunk.js.map",
+    "main.css": "/new-music-browser/static/css/main.90a488a8.chunk.css",
+    "main.js": "/new-music-browser/static/js/main.389268c3.chunk.js",
+    "main.js.map": "/new-music-browser/static/js/main.389268c3.chunk.js.map",
     "runtime-main.js": "/new-music-browser/static/js/runtime-main.b1f8da6e.js",
     "runtime-main.js.map": "/new-music-browser/static/js/runtime-main.b1f8da6e.js.map",
-    "static/js/2.3e0b5fea.chunk.js": "/new-music-browser/static/js/2.3e0b5fea.chunk.js",
-    "static/js/2.3e0b5fea.chunk.js.map": "/new-music-browser/static/js/2.3e0b5fea.chunk.js.map",
+    "static/js/2.055c5fd1.chunk.js": "/new-music-browser/static/js/2.055c5fd1.chunk.js",
+    "static/js/2.055c5fd1.chunk.js.map": "/new-music-browser/static/js/2.055c5fd1.chunk.js.map",
     "index.html": "/new-music-browser/index.html",
-    "precache-manifest.c694fa8fb169758e34b21d651a575348.js": "/new-music-browser/precache-manifest.c694fa8fb169758e34b21d651a575348.js",
+    "precache-manifest.45e5dd4a8da26063b160fec4a30d3a41.js": "/new-music-browser/precache-manifest.45e5dd4a8da26063b160fec4a30d3a41.js",
     "service-worker.js": "/new-music-browser/service-worker.js",
-    "static/css/main.f7728e8a.chunk.css.map": "/new-music-browser/static/css/main.f7728e8a.chunk.css.map",
-    "static/js/2.3e0b5fea.chunk.js.LICENSE.txt": "/new-music-browser/static/js/2.3e0b5fea.chunk.js.LICENSE.txt"
+    "static/css/main.90a488a8.chunk.css.map": "/new-music-browser/static/css/main.90a488a8.chunk.css.map",
+    "static/js/2.055c5fd1.chunk.js.LICENSE.txt": "/new-music-browser/static/js/2.055c5fd1.chunk.js.LICENSE.txt",
+    "static/media/loader.gif": "/new-music-browser/static/media/loader.1f395df9.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.b1f8da6e.js",
-    "static/js/2.3e0b5fea.chunk.js",
-    "static/css/main.f7728e8a.chunk.css",
-    "static/js/main.c85536c0.chunk.js"
+    "static/js/2.055c5fd1.chunk.js",
+    "static/css/main.90a488a8.chunk.css",
+    "static/js/main.389268c3.chunk.js"
   ]
 }
