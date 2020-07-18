@@ -143,3 +143,14 @@ body {
   border-style: none;
   cursor: pointer;
 }
+
+.toTop {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 70px;
+  color: rgb(25, 132, 25);
+  background-color: transparent;
+}

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import GenreButton from "./GenreButton";
-//import GenreItem from "./GenreItem";
 import AlbumItem from "./GenreItem";
 
 class Mainpage extends Component {
@@ -17,7 +16,7 @@ class Mainpage extends Component {
   }
   selectGenre(genreName) {
     let albumCount = 0;
-    const re = new RegExp(genreName.replace("amp;", ""));
+    const re = new RegExp(genreName.replace("amp;", "").toLowerCase());
     let listFromGenreName = [];
     for (let i = 0; i < this.props.genreList.length; i++) {
       if (this.props.genreList[i].search(re) > -1) {
@@ -26,12 +25,6 @@ class Mainpage extends Component {
     }
     this.setState({ selected: listFromGenreName });
   }
-  /*selectGenre = (e) => {
-    e.preventDefault();
-    const genreKeyWord = e.target.name;
-    console.log(e.target);
-    console.log(genreKeyWord);
-  };*/
 
   render() {
     const idsUsed = [];
@@ -42,72 +35,89 @@ class Mainpage extends Component {
           This will display albums associated with that genre, sorted by
           subgenre
         </p>
-        <ul className="keyGenres">
+        <ul id="top" className="keyGenres">
           <GenreButton
+            link="#subGenres"
             genre="hip hop"
             selectGenre={() => this.selectGenre("hip hop")}
           />
           <GenreButton
+            link="#subGenres"
             genre="r&b"
             selectGenre={() => this.selectGenre("r&b")}
           />
           <GenreButton
+            link="#subGenres"
             genre="pop"
             selectGenre={() => this.selectGenre("pop")}
           />
           <GenreButton
+            link="#subGenres"
             genre="dance"
             selectGenre={() => this.selectGenre("dance")}
           />
           <GenreButton
+            link="#subGenres"
             genre="edm"
             selectGenre={() => this.selectGenre("edm")}
           />
           <GenreButton
+            link="#subGenres"
             genre="electronic"
             selectGenre={() => this.selectGenre("electronic")}
           />
           <GenreButton
+            link="#subGenres"
             genre="trap"
             selectGenre={() => this.selectGenre("trap")}
           />
           <GenreButton
+            link="#subGenres"
             genre="rock"
             selectGenre={() => this.selectGenre("rock")}
           />
           <GenreButton
+            link="#subGenres"
             genre="metal"
             selectGenre={() => this.selectGenre("metal")}
           />
           <GenreButton
+            link="#subGenres"
             genre="punk"
             selectGenre={() => this.selectGenre("punk")}
           />
           <GenreButton
+            link="#subGenres"
             genre="folk"
             selectGenre={() => this.selectGenre("folk")}
           />
           <GenreButton
+            link="#subGenres"
             genre="country"
             selectGenre={() => this.selectGenre("country")}
           />
           <GenreButton
+            link="#subGenres"
             genre="reggaeton"
             selectGenre={() => this.selectGenre("reggaeton")}
           />
           <GenreButton
+            link="#subGenres"
             genre="latin"
             selectGenre={() => this.selectGenre("latin")}
           />
           <GenreButton
+            link="#subGenres"
             genre="classical"
             selectGenre={() => this.selectGenre("classical")}
           />
           <GenreButton
+            link="#subGenres"
             genre="alternative"
             selectGenre={() => this.selectGenre("alternative")}
           />
           <GenreButton
+            link="#subGenres"
             genre="indie"
             selectGenre={() => this.selectGenre("indie")}
           />
@@ -130,10 +140,11 @@ class Mainpage extends Component {
             Search Genres
           </button>
         </form>
-        <div /*className="subGenres"*/>
+        <div id="subGenres">
           <ul className="subGenres">
             {this.state.selected.map((genre) => (
               <GenreButton
+                link="#showAlbums"
                 key={genre}
                 genre={genre}
                 selectGenre={() => this.selectGenre(genre)}
@@ -141,9 +152,9 @@ class Mainpage extends Component {
             ))}
           </ul>
         </div>
-        <div className="showAlbums">
+        <div id="showAlbums" className="showAlbums">
           {this.state.selected.map((genre) => (
-            <div className="genreDiv">
+            <div key={genre} className="genreDiv">
               <h1>{genre}</h1>
               <div className="albumElements">
                 {this.props.albumDatabase.map((album) => {
@@ -152,28 +163,16 @@ class Mainpage extends Component {
                     !idsUsed.includes(album.id)
                   ) {
                     idsUsed.push(album.id);
-                    //console.log(!this.state.idsUsed.includes(album.id));
-                    return (
-                      <AlbumItem
-                        //addId={() => this.addIds(album.id)}
-                        album={album}
-                      />
-                    );
+                    return <AlbumItem key={album.id} album={album} />;
                   }
                 })}
               </div>
             </div>
-
-            //console.log("component is going");
-            /*<GenreItem
-                key={genre}
-                genre={genre}
-                idsUsed={this.state.idsUsed}
-                albumDatabase={this.props.albumDatabase}
-                genreList={this.props.genreList}
-            />*/
           ))}
         </div>
+        <a href="#top" className="toTop">
+          ^
+        </a>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import logo from "./loader.gif";
 
 class LandingPage extends Component {
   render() {
@@ -13,9 +14,8 @@ class LandingPage extends Component {
             genre, so that you don't have to waste time looking through music
             that doesn't interest you.
           </p>
-          <p class="subGenreLoad">
-            Please wait while data is loaded from Spotify...
-          </p>
+          <p>Please wait while data is loaded from Spotify</p>
+          <img src={logo} width="20px"></img>
         </header>
       );
     } else {

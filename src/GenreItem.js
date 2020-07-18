@@ -12,14 +12,6 @@ class AlbumItem extends Component {
           {this.props.album.name}
         </a>
         <p className="artist">{this.props.album.artists[0].name}</p>
-        {/*<h1>{this.props.genre}</h1>
-        <ul>
-          {this.props.albumDatabase.map((album) => {
-            if (album.genres.includes(this.props.genre)) {
-              return <h3>{album.name}</h3>;
-            }
-          })}
-        </ul>*/}
       </div>
     );
   }
