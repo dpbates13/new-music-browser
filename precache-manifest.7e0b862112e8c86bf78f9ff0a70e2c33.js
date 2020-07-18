@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1be65d4e3667225357f8bede6ff8097f",
+    "revision": "fcbf74a8a0ac53cf92ff4d949f51bb6d",
     "url": "/new-music-browser/index.html"
   },
   {
