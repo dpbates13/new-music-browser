@@ -12,7 +12,7 @@ class App extends Component {
 
   getData() {
     return new Promise((resolve, reject) => {
-      fetch("https://radiant-tundra-53106.herokuapp.com/data", {
+      fetch("https://radiant-tundra-53106.herokuapp.com/output", {
         method: "GET",
       })
         .then((res) => res.json())
